@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "mocha -r ts-node/register test/**/*.ts"
+    "test": "mocha -r ts-node/register test/**/*.ts",
+    "test2": "test/promiseYM.js",
+    "test3": "test/promise3.js"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +19,7 @@
     "@types/sinon": "^9.0.4",
     "@types/sinon-chai": "^3.2.4",
     "chai": "^4.2.0",
+    "is-promise": "^4.0.0",
     "mocha": "^7.2.0",
     "sinon": "^9.0.2",
     "sinon-chai": "^3.5.0",
