@@ -171,7 +171,59 @@ class Promise1 {
 
 
 
-var promisesAplusTests = require("promises-aplus-tests");
-promisesAplusTests(Promise1, function (err) {
-  console.log(1111,err)
+
+// function getJSON(e) {
+//   return new Promise1((resolve, reject) => {
+//       resolve('/post/' + e + ".json") 
+//   })
+
+// }
+
+// const Promise1s = [2, 3, 5, 7, 11, 13].map(function (id) {
+//   return getJSON(id)
+// });
+
+// Promise1.all(Promise1s).then(function (posts) {
+//   console.log(posts)
+// }).catch(function (reason) {
+//   console.log(`reason`, reason)
+//   // ...
+// });
+
+
+// const p1 = new Promise1((resolve, reject) => {
+//   resolve('hello');
+// })
+
+// const p2 = new Promise1((resolve, reject) => {
+//   resolve('world');
+// })
+
+// Promise1.all([p1, p2])
+// .then(result => console.log(result))
+// .catch(e => console.log(e));
+
+// const Promise11 = Promise1.resolve(3);
+// const Promise12 = 42;
+// const Promise13 = new Promise1((resolve, reject) => {
+//   setTimeout(resolve, 100, 'foo');
+// });
+
+// Promise1.all([Promise11, Promise12, Promise13]).then((values) => {
+//   console.log(values);
+// });
+
+
+let x = Promise1.resolve(3)
+x.then((e)=>{
+  console.log(e)
+  return ++e
+}).then((f)=>{
+  console.log(f)
+  return f*2
+}).then((h)=>{
+  console.log(h)
+  throw new Error('can not do it')
+}).catch((i)=>{
+  console.log(i)
 })

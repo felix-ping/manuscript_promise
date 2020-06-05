@@ -1,5 +1,4 @@
 import * as chai from 'chai'
-import Promise from '../promise'
 
 const assert = chai.assert
 
