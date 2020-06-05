@@ -21,6 +21,7 @@
     "chai": "^4.2.0",
     "is-promise": "^4.0.0",
     "mocha": "^7.2.0",
+    "promises-aplus-tests": "^2.1.2",
     "sinon": "^9.0.2",
     "sinon-chai": "^3.5.0",
     "ts-node": "^8.10.1",

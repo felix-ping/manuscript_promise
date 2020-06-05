@@ -171,3 +171,7 @@ class Promise1 {
 
 
 
+var promisesAplusTests = require("promises-aplus-tests");
+promisesAplusTests(Promise1, function (err) {
+  console.log(1111,err)
+})
