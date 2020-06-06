@@ -5,5 +5,7 @@ let b = ()=>{
 }
 
 let c = setTimeout(()=>{
-  
+
 })
+
+c  = null
