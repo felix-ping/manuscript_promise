@@ -9,3 +9,5 @@ let c = setTimeout(()=>{
 })
 
 c  = null
+
+let go = true
