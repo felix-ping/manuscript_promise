@@ -10,4 +10,7 @@ let c = setTimeout(()=>{
 
 c  = null
 
+
 let change =undefined
+
+let go = true
