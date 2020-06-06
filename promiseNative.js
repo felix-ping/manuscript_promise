@@ -41,16 +41,22 @@
 // });
 
 
-let x = Promise.resolve(3)
-x.then((e)=>{
+let x =function(){
+  return new Promise((resolve, reject) => {
+    resolve(3)
+  })
+} 
+x().then((e)=>{
   console.log(e)
   return ++e
 }).then((f)=>{
   console.log(f)
-  return f*2
+  return new Promise((resolve, reject) => {
+    resolve(f+1)
+  })
 }).then((h)=>{
   console.log(h)
   throw new Error('can not do it')
 }).catch((i)=>{
-  console.log(i)
+  console.log('i',i)
 })

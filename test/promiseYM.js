@@ -40,7 +40,7 @@ class Promise1 {
     executor(resolve, reject)
   }
 
-
+//TODO
   then(onResolved, onRejected) {
     const self = this
     onResolved = typeof onResolved === 'function' ? onResolved : value => value
